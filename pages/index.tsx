@@ -1,16 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import styles from "@/styles/Home.module.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = Roboto_Mono({
   subsets: ["latin"],
+  variable: "--font-roboto-mono",
 });
 
 export default function Home() {
@@ -35,7 +38,7 @@ export default function Home() {
             priority
           />
           <div className={styles.intro}>
-            <h1>To get started, edit the index.tsx file.</h1>
+            <h1>PAGE ROUTER</h1>
             <p>
               Looking for a starting point or more instructions? Head over to{" "}
               <a
@@ -86,3 +89,6 @@ export default function Home() {
     </>
   );
 }
+// function Geist(arg0: { variable: string; subsets: string[]; }) {
+//   throw new Error("Function not implemented.");
+// }
