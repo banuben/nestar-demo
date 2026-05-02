@@ -3,8 +3,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import React, { useState } from "react";
 import { light } from "../scss/MaterialTheme";
+import "../scss/app.scss";
+import "../scss/pc/main.scss";
 
-const App = ({ Component, pageProps }: AppProps) => {
+export default function App({ Component, pageProps }: AppProps) {
   // @ts-ignore
   const [theme, setTheme] = useState(createTheme(light));
   // Socket.io, Redux, Mui ....
@@ -14,6 +16,4 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Component {...pageProps} />
     </ThemeProvider>
   );
-};
-
-export default App;
+}

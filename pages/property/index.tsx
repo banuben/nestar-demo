@@ -14,9 +14,9 @@ import { NextPage } from "next";
 const PropertyList: NextPage = () => {
   console.log("PROPERTY COMPONENT -PAGES ROUTER");
   return (
-    <>
-      <Container>PROPERTY LIST</Container>
-    </>
+    <div style={{ margin: "20px 0" }}>
+      <Stack className="container">PROPERTY LIST</Stack>
+    </div>
   );
 };
 
