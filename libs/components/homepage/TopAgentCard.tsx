@@ -4,8 +4,8 @@ import { Stack } from "@mui/material";
 const TopAgentCard = () => {
   return (
     <Stack className="top-agent-card">
-      <img src="/img/profile/defaultUser.svg" alt="" />
-      <strong>Shawn</strong>
+      <img src="/img/profile/girl.svg" alt="" />
+      <strong>Bonu</strong>
       <span>AGENT</span>
     </Stack>
   );
